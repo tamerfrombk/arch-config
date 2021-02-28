@@ -5,3 +5,8 @@
 	rebase = false
 [init]
 	defaultBranch = master
+[help]
+	autocorrect = 5
+[core]
+	editor = vim
+	autocrlf = input
