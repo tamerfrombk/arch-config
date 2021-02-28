@@ -39,6 +39,7 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias clip='xclip -sel clipboard'
+alias open='xdg-open'
 
 #
 # executables
