@@ -8,7 +8,7 @@ fi
 # these are the packages referenced within this script that are required
 # to make the script execute successfully or to ensure a proper environment setup
 #
-required_pkgs='yay vim firefox starship nvm ^go$ ^exa$ ^xclip$'
+required_pkgs='yay vim firefox starship nvm ^go$ ^exa$ ^xclip$ ^nerd-fonts-complete$'
 for pkg in $required_pkgs; do
     if ! yay -Qqs "$pkg" &>/dev/null; then
         echo "WARN: package '$pkg' is required to be installed but wasn't found."
@@ -27,14 +27,21 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export EDITOR=vim
 export BROWSER=firefox
 
+export HOMEBIN="$HOME/bin"
+
 export GOPATH="$HOME/Documents/projects"
+
+#
+# PATH
+#
+export PATH="${HOMEBIN}:${PATH}:${GOPATH}/bin"
 
 #
 # aliases
 #
 alias vi='vim'
 alias more='less'
-alias ls='exa -lb --color=auto'
+alias ls='exa -lb --icons --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
