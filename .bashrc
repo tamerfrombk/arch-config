@@ -8,7 +8,7 @@ fi
 # these are the packages referenced within this script that are required
 # to make the script execute successfully or to ensure a proper environment setup
 #
-required_pkgs='yay vim firefox starship nvm ^go$ ^exa$ ^xclip$ ^nerd-fonts-complete$'
+required_pkgs='yay vim firefox starship nvm ^go$ ^exa$ ^xclip$ ^nerd-fonts-complete$ ^neofetch$'
 for pkg in $required_pkgs; do
     if ! yay -Qqs "$pkg" &>/dev/null; then
         echo "WARN: package '$pkg' is required to be installed but wasn't found."
@@ -58,3 +58,5 @@ eval "$(starship init bash)"
 # nvm
 source /usr/share/nvm/init-nvm.sh
 
+# neofetch
+neofetch
