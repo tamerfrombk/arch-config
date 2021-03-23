@@ -8,7 +8,7 @@ fi
 # these are the packages referenced within this script that are required
 # to make the script execute successfully or to ensure a proper environment setup
 #
-required_pkgs='yay vim firefox starship nvm ^go$ ^exa$ ^xclip$ ^nerd-fonts-complete$ ^neofetch$'
+required_pkgs='yay vim firefox starship nvm ^go$ ^exa$ ^xclip$ ^nerd-fonts-complete$ ^neofetch$ ^bat$'
 for pkg in $required_pkgs; do
     if ! yay -Qqs "$pkg" &>/dev/null; then
         echo "WARN: package '$pkg' is required to be installed but wasn't found."
@@ -47,6 +47,7 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias clip='xclip -sel clipboard'
 alias open='xdg-open'
+alias cat='bat'
 
 #
 # executables
