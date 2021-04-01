@@ -27,14 +27,14 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export EDITOR=vim
 export BROWSER=firefox
 
-export HOMEBIN="$HOME/bin"
+export LOCALBIN="$HOME/.local/bin"
 
 export GOPATH="$HOME/Documents/projects"
 
 #
 # PATH
 #
-export PATH="${HOMEBIN}:${PATH}:${GOPATH}/bin"
+export PATH="${PATH}:${LOCALBIN}:${GOPATH}/bin"
 
 #
 # aliases
