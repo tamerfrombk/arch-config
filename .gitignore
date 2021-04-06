@@ -1,0 +1,12 @@
+# initially ignore everything
+/*
+
+# exclusions
+!/.gitignore
+!/.bashrc
+!/.gitconfig
+!/.vimrc
+!/.vim
+/.vim/*
+!/.vim/colors
+!/.vim/en.utf-8.add
