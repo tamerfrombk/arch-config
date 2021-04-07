@@ -58,5 +58,12 @@ eval "$(starship init bash)"
 # nvm
 source /usr/share/nvm/init-nvm.sh
 
+# pywal
+if [ -f ~/.cache/wal/sequences ]; then
+    # note we unalias the 'cat' command here
+    (\cat ~/.cache/wal/sequences &)
+    source ~/.cache/wal/colors-tty.sh
+fi
+
 # neofetch
 neofetch
