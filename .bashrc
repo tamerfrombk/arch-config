@@ -23,18 +23,17 @@ done
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_BIN_HOME="$HOME/.local/bin"
 
 export EDITOR=vim
 export BROWSER=firefox
 
-export LOCALBIN="$HOME/.local/bin"
-
-export GOPATH="$HOME/Documents/projects"
+export GOPATH="$HOME/projects/go"
 
 #
 # PATH
 #
-export PATH="${PATH}:${LOCALBIN}:${GOPATH}/bin"
+export PATH="${PATH}:${XDG_BIN_HOME}:${GOPATH}/bin"
 
 #
 # aliases
