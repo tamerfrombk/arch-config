@@ -28,7 +28,7 @@ export XDG_BIN_HOME="$HOME/.local/bin"
 export EDITOR=vim
 export BROWSER=firefox
 
-export GOPATH="$HOME/projects/go"
+export GOPATH="$HOME/Documents/projects/go"
 
 #
 # PATH
