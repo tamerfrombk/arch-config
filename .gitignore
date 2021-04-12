@@ -14,3 +14,5 @@
 !/.config/i3/config
 !/.config/alacritty/alacritty.yml
 !/.config/polybar
+!/.config/rofi/config.rasi
+!/.config/rofi/theme.rasi
