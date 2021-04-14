@@ -8,7 +8,7 @@ fi
 # these are the packages referenced within this script that are required
 # to make the script execute successfully or to ensure a proper environment setup
 #
-required_pkgs='yay vim firefox starship nvm ^go$ ^exa$ ^xclip$ ^nerd-fonts-complete$ ^neofetch$ ^bat$'
+required_pkgs='yay vim firefox starship nvm ^go$ ^exa$ ^xclip$ ^nerd-fonts-complete$ ^neofetch$ ^bat$ ^ghcup-hs-bin$'
 for pkg in $required_pkgs; do
     if ! yay -Qqs "$pkg" &>/dev/null; then
         echo "WARN: package '$pkg' is required to be installed but wasn't found."
@@ -24,6 +24,9 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_BIN_HOME="$HOME/.local/bin"
+
+# Allow GHC to use XDG dirs (https://gitlab.haskell.org/haskell/ghcup-hs/#xdg-support)
+export GHCUP_USE_XDG_DIRS=1
 
 export EDITOR=vim
 export BROWSER=firefox
