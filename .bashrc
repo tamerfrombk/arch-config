@@ -10,7 +10,7 @@ fi
 #
 required_pkgs='yay vim firefox starship nvm ^go$ ^exa$ ^xclip$ ^nerd-fonts-complete$ ^neofetch$ ^bat$ ^ghcup-hs-bin$'
 for pkg in $required_pkgs; do
-    if ! yay -Qqs "$pkg" &>/dev/null; then
+    if ! pacman -Qqs "$pkg" &>/dev/null; then
         echo "WARN: package '$pkg' is required to be installed but wasn't found."
     fi
 done
