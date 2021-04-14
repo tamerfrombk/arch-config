@@ -16,3 +16,5 @@
 !/.config/polybar
 !/.config/rofi/config.rasi
 !/.config/rofi/theme.rasi
+!/.config/rofi/theme.rasi
+!/.config/emacs/init.el

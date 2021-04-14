@@ -50,6 +50,7 @@ alias egrep='egrep --color=auto'
 alias clip='xclip -sel clipboard'
 alias open='xdg-open'
 alias cat='bat'
+alias emacs='emacs -nw'
 
 #
 # executables
