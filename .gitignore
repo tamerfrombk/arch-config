@@ -18,3 +18,9 @@
 !/.config/rofi/theme.rasi
 !/.config/rofi/theme.rasi
 !/.config/emacs/init.el
+
+# .local/bin
+/.local/bin/*
+!/.local/bin/mount_crypt.sh
+!/.local/bin/umount_crypt.sh
+
